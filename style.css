@@ -43,10 +43,23 @@ div {
 }
 
 .left-column {
-  width: 35rem;
+  width: 35%;
+}
+
+.right-column {
+  width: 65%;
+  height: 100%;
 }
 
 .left-column img {
   max-width: 100%;
   height: auto;
+}
+
+#spiel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
