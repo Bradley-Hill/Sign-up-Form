@@ -41,3 +41,12 @@ div {
   justify-content: center;
   width: 100%;
 }
+
+.left-column {
+  width: 35rem;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+}
