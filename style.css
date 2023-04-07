@@ -33,3 +33,11 @@ div {
   padding: 0.5rem;
   border: 1px solid black;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
