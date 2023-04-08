@@ -33,6 +33,12 @@ html {
 .left {
   width: 35%;
   position: relative;
+  float: left;
+}
+
+.right {
+  width: 65%;
+  float: right;
 }
 
 .left img {
@@ -51,7 +57,7 @@ html {
 }
 
 .logo img {
-  width: 150px; /* adjust size as needed */
+  width: 150px;
 }
 
 .logo h1 {
@@ -77,20 +83,24 @@ form {
   margin-bottom: 2em;
 }
 
-input,
-button {
-  padding: 0.5em;
-  margin-bottom: 1em;
-  border-radius: 0.25em;
-  border: 1px solid #ccc;
-  font-size: 1em;
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
   background-color: #007bff;
   color: #fff;
-  cursor: pointer;
-  transition: background-color 0.2s;
+  border: none;
 }
 
 button:hover {
