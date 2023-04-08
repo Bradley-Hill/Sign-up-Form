@@ -19,7 +19,7 @@
 }
 
 :root {
-  --font-family: "Roboto Slab", sans-serif;
+  --font-family: "Roboto-Slab", Arial, Helvetica, sans-serif;
 }
 
 body,
@@ -47,7 +47,7 @@ html {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  font-family: "Norse-Bold", sans-serif;
+  font-family: "Norse-Regular", sans-serif;
 }
 
 .logo img {
@@ -57,6 +57,7 @@ html {
 .logo h1 {
   font-size: 2em;
   margin: 0;
+  font-family: "Norse-Regular", sans-serif;
 }
 .right {
   width: 65%;
