@@ -8,59 +8,44 @@
     <title>Sign-up Form - Odin Project</title>
   </head>
   <body>
-    <h1>Sign Up Form</h1>
-
     <div class="container">
-      <div class="left-column">
-        <img
-          class="sidebar"
-          src="/Images/fungus amoungus.jpg"
-          alt="Mushroom-Man picking mushrooms by Nick Augie in 2019"
-        />
-        <p>Art by Nick Augie</p>
+      <div class="left">
+        <img src="Images/fungus amoungus.jpg" alt="Myconid man picking Mushrooms">
         <div class="logo">
-          <img src="images/apoc-logo.png" alt="gasmask logo" />
+          <img src="Images/apoc-logo.png" alt="Gasmask logo">
+          <h1>Doomers</h1>
         </div>
       </div>
-      <div class="right-column">
-        <div id="spiel">
-          <p>
-            This is the selling spiel! You need to sign up because otherwise all
-            the puppies will die!
-          </p>
+      <div class="right">
+        <div class="call">
+          <h2>This is an organisation for those who wish to survive the coming apocalypse. Sign Up <em>now</em> to get started planning with others!</h2>
+          <h3>You <em>know</em> you want to!</h3>
         </div>
-        <div>
-          <form action="#" method="post">
+        <form action="#" method="post">
+          
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="" />
+          
+            <label for="second-name">Second Name:</label>
+            <input type="text" name="second-name" id="" />
+         
+            <label for="email">E-mail address: </label>
+            <input type="email" name="email" id="" />
+         
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" id="" />
+        
+            <label for="password">Choose Password: </label>
+            <input type="password" name="password" id="" />
+          
+            <label for="pass_confirm">Confirm Password: </label>
+            <input type="password" name="pass_confirm" id="" />
+
             <div>
-              <label for="first-name">First Name:</label>
-              <input type="text" name="first-name" id="" />
+              <button class="submit">Create Account</button>
             </div>
-            <div>
-              <label for="second-name">Second Name:</label>
-              <input type="text" name="second-name" id="" />
-            </div>
-            <div>
-              <label for="email">E-mail address: </label>
-              <input type="email" name="email" id="" />
-            </div>
-            <div>
-              <label for="phone">Phone Number: </label>
-              <input type="tel" name="phone" id="" />
-            </div>
-            <div>
-              <label for="password">Choose Password: </label>
-              <input type="password" name="password" id="" />
-            </div>
-            <div>
-              <label for="pass_confirm">Confirm Password: </label>
-              <input type="password" name="pass_confirm" id="" />
-            </div>
-          </form>
-        </div>
-        <div>
-          <button type="submit">Create Account</button>
-          <p>Already a member? <a href="#" id="member-log-in">Log In</a></p>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
