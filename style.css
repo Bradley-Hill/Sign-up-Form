@@ -89,19 +89,21 @@ html {
 }
 
 .call {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2em;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   margin: 20px;
 }
 
 .signup {
   text-align: center;
   font-family: var(--font-family);
+  grid-column: 1 / -1;
 }
 
 form input,
@@ -114,6 +116,17 @@ form button {
 label {
   font-size: 18px;
   margin-bottom: 10px;
+  grid-column: 1 / 2;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  grid-column: 2 / -1;
 }
 
 button {
