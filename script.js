@@ -14,7 +14,7 @@ form.addEventListener("submit", function (event) {
     firstName === "" ||
     email === "" ||
     password === "" ||
-    confirm - password === ""
+    confirmPassword === ""
   ) {
     alert("Please fill all required fields");
     event.preventDefault();
@@ -52,8 +52,8 @@ form.addEventListener("submit", function (event) {
   }
 
   return true;
+});
 
-  button.addEventListener("click", () => {
-    form.submit();
-  });
+button.addEventListener("click", () => {
+  form.submit();
 });
