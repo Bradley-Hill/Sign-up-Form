@@ -54,6 +54,9 @@ form.addEventListener("submit", function (event) {
   return true;
 });
 
-button.addEventListener("click", () => {
-  form.submit();
+button.addEventListener("click", function (event) {
+  if (!form.checkValidity()) {
+    event.preventDefault();
+    alert("Please fill all required fields");
+  }
 });
