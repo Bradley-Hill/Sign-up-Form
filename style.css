@@ -125,13 +125,27 @@ form input {
 
 .signup input[type="text"],
 .signup input[type="email"],
-.signup input[type="password"] {
+.signup input[type="password"],
+.signup input[type="tel"] {
   display: block;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px #49655d;
+}
+
+.signup input[type="text"]:focus,
+.signup input[type="email"]:focus,
+.signup input[type="password"]:focus,
+.signup input[type="tel"]:focus {
+  outline-color: #49655d;
 }
 
 button {
