@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* adding fonts for use in the form */
-@font-face {
-  font-family: "Norse-Regular", sans-serif;
-  src: url(/fonts/norse.regular.otf);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Norse-Bold", sans-serif;
-  src: url(/fonts/norse.bold.otf);
-  font-weight: bold;
-  font-style: normal;
-}
-
 :root {
   --font-family: "Roboto Slab", serif;
 }
@@ -68,7 +54,7 @@ html {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 5px;
   text-align: center;
-  font-family: "Norse-Regular", sans-serif;
+  font-family: var(--font-family);
   color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: row;
@@ -87,7 +73,6 @@ html {
   opacity: 1;
   margin: 1rem;
   padding: 1rem;
-  font-family: "Norse-Regular", sans-serif;
 }
 
 .call {
