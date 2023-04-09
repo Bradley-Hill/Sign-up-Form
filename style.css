@@ -164,3 +164,7 @@ div .account {
 p .pass-require {
   font-size: 12px;
 }
+
+input:invalid {
+  border-color: red;
+}
