@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /* adding fonts for use in the form */
 @font-face {
   font-family: "Norse-Regular", sans-serif;
@@ -11,15 +13,9 @@
   font-weight: bold;
   font-style: normal;
 }
-@font-face {
-  font-family: "Roboto-Slab", Arial, Helvetica, sans-serif;
-  src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
 
 :root {
-  --font-family: "Roboto-Slab", Arial, Helvetica, sans-serif;
+  --font-family: "Roboto Slab", serif;
 }
 
 body,
@@ -51,7 +47,10 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+
+  padding: 0;
+  margin: 0;
+  background-color: rgba(220, 220, 220, 0.2);
 }
 
 .left img {
@@ -75,22 +74,26 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  opacity: 0.8;
 }
 
 .logo img {
   width: 150px;
+  opacity: 0.8;
 }
 
 .logo h1 {
-  font-size: 2em;
-  margin: 0;
+  font-size: 3em;
+  font-family: "Roboto", sans-serif;
+  opacity: 1;
+  margin: 1rem;
+  padding: 1rem;
   font-family: "Norse-Regular", sans-serif;
 }
 
 .call {
   text-align: left;
   margin-bottom: 2em;
+  padding: 0.5rem;
 }
 
 form {
@@ -108,8 +111,7 @@ form {
   font-family: var(--font-family);
 }
 
-form input,
-form button {
+form input {
   margin: 10px;
   padding: 5px;
   font-family: var(--font-family);
@@ -136,12 +138,27 @@ button {
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #afc4bd;
+  color: #405867;
   border: none;
   cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #49655d;
+  color: #afc4bd;
+}
+
+div .signup {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+div .account {
+  width: 100%;
+  padding: 2.5rem;
+  margin-left: 10rem;
 }
