@@ -136,7 +136,7 @@ input:focus {
 .signup input[type="email"]:invalid,
 .signup input[type="password"]:invalid,
 .signup input[type="tel"]:invalid {
-  outline-color: red;
+  outline-color: rgb(145, 0, 0);
 }
 
 button {
@@ -169,8 +169,4 @@ div .account {
 }
 p .pass-require {
   font-size: 12px;
-}
-
-input:invalid {
-  border-color: red;
 }
