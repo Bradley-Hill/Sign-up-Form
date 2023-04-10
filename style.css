@@ -33,7 +33,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 0;
   margin: 0;
   background-color: rgba(220, 220, 220, 0.2);
@@ -131,6 +130,13 @@ input:focus {
 .signup input[type="password"]:focus,
 .signup input[type="tel"]:focus {
   outline-color: #49655d;
+}
+
+.signup input[type="text"]:invalid,
+.signup input[type="email"]:invalid,
+.signup input[type="password"]:invalid,
+.signup input[type="tel"]:invalid {
+  outline-color: red;
 }
 
 button {
